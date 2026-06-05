@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(202, 202, 202);
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.card {
+    width: 100%;
+    max-width: 470px;
+    background: linear-gradient(135deg, #00feba, #5b548a);
+    color: white;
+    margin: 50px auto;
+    border-radius: 20px;
+    padding: 40px 35px;
+    text-align: center;
+}
+
+.search {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.search input {
+    border: none;
+    outline: none;
+    background: #ebfffc;
+    color: #555;
+    padding: 10px 20px;
+    height: 60px;
+    border-radius: 30px;
+    flex: 1;
+    font-size: 18px;
+}
+
+.search button {
+    border: none;
+    outline: none;
+    background: #ebfffc;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.search button img {
+    width: 18px;
+}
+
+.weather-icon {
+    width: 170px;
+    margin-top: 30px;
+}
+
+.weather h1 {
+    font-size: 80px;
+    font-weight: 500;
+}
+
+.weather h2 {
+    font-size: 45px;
+    font-weight: 400;
+}
+
+.details {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 50px;
+}
+
+.col {
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.col img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+.humidity,
+.wind {
+    font-size: 28px;
+}
+
+.weather {
+    display: none;
+}
+
+.error {
+    display: none;
+    margin-top: 15px;
+    text-align: left;
+    color: #ffe5e5;
+}
+
+/* Mobile Devices */
+
+@media (max-width: 600px) {
+
+    .card {
+        padding: 25px 20px;
+        margin-top: 20px;
+    }
+
+    .weather-icon {
+        width: 120px;
+    }
+
+    .weather h1 {
+        font-size: 55px;
+    }
+
+    .weather h2 {
+        font-size: 32px;
+    }
+
+    .details {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 25px;
+    }
+
+    .humidity,
+    .wind {
+        font-size: 22px;
+    }
+
+    .search input {
+        font-size: 16px;
+        height: 50px;
+    }
+
+    .search button {
+        width: 50px;
+        height: 50px;
+    }
+}
