@@ -11,7 +11,6 @@ async function checkWeather(city) {
     if (city.trim() === "") {
         return;
     }
-
     try {
 
         const response = await fetch(
